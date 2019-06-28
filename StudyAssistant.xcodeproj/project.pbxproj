@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,43 @@
 		34E8136C22C52D8000CE1378 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34E8136A22C52D8000CE1378 /* Main.storyboard */; };
 		34E8136E22C52D8200CE1378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34E8136D22C52D8200CE1378 /* Assets.xcassets */; };
 		34E8137122C52D8200CE1378 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34E8136F22C52D8200CE1378 /* LaunchScreen.storyboard */; };
+		34FCCD4322C5394A0041DC99 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FCCD4122C5394A0041DC99 /* LoginViewController.swift */; };
+		34FCCD4422C5394A0041DC99 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34FCCD4222C5394A0041DC99 /* LoginViewController.xib */; };
+		34FCCD4722C53AD20041DC99 /* RegistrarseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FCCD4522C53AD20041DC99 /* RegistrarseViewController.swift */; };
+		34FCCD4822C53AD20041DC99 /* RegistrarseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34FCCD4622C53AD20041DC99 /* RegistrarseViewController.xib */; };
+		34FCCD4B22C544390041DC99 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FCCD4922C544390041DC99 /* InfoViewController.swift */; };
+		34FCCD4C22C544390041DC99 /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34FCCD4A22C544390041DC99 /* InfoViewController.xib */; };
+		34FCCD4F22C548820041DC99 /* InfoEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FCCD4D22C548820041DC99 /* InfoEditViewController.swift */; };
+		34FCCD5022C548820041DC99 /* InfoEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34FCCD4E22C548820041DC99 /* InfoEditViewController.xib */; };
+		34FCCD5522C56DC80041DC99 /* Estudiante.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FCCD5422C56DC80041DC99 /* Estudiante.swift */; };
+		34FCCD5722C56DF50041DC99 /* Instituto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FCCD5622C56DF50041DC99 /* Instituto.swift */; };
+		34FCCD5922C56E370041DC99 /* Curso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FCCD5822C56E370041DC99 /* Curso.swift */; };
+		34FCCD5B22C56E7F0041DC99 /* Actividad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FCCD5A22C56E7F0041DC99 /* Actividad.swift */; };
+		34FCCD5D22C56EFD0041DC99 /* Departamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FCCD5C22C56EFD0041DC99 /* Departamento.swift */; };
+		34FCCD5F22C56F3D0041DC99 /* Provincia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FCCD5E22C56F3D0041DC99 /* Provincia.swift */; };
+		34FCCD6122C56F6D0041DC99 /* Distrito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FCCD6022C56F6D0041DC99 /* Distrito.swift */; };
+		34FCCD6522C570BE0041DC99 /* InstitutoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FCCD6322C570BE0041DC99 /* InstitutoViewController.swift */; };
+		34FCCD6622C570BE0041DC99 /* InstitutoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34FCCD6422C570BE0041DC99 /* InstitutoViewController.xib */; };
+		34FCCD6A22C572330041DC99 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FCCD6822C572330041DC99 /* ItemTableViewCell.swift */; };
+		34FCCD6B22C572330041DC99 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34FCCD6922C572330041DC99 /* ItemTableViewCell.xib */; };
+		34FCCD6F22C5735A0041DC99 /* CursoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FCCD6D22C5735A0041DC99 /* CursoViewController.swift */; };
+		34FCCD7022C5735A0041DC99 /* CursoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34FCCD6E22C5735A0041DC99 /* CursoViewController.xib */; };
+		34FCCD7422C578A40041DC99 /* ActividadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FCCD7222C578A40041DC99 /* ActividadViewController.swift */; };
+		34FCCD7522C578A40041DC99 /* ActividadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34FCCD7322C578A40041DC99 /* ActividadViewController.xib */; };
+		34FCCD7822C579CD0041DC99 /* ActUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FCCD7622C579CD0041DC99 /* ActUnitViewController.swift */; };
+		34FCCD7922C579CD0041DC99 /* ActUnitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34FCCD7722C579CD0041DC99 /* ActUnitViewController.xib */; };
+		34FCCD7B22C57A280041DC99 /* Foro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FCCD7A22C57A280041DC99 /* Foro.swift */; };
+		34FCCD7E22C57EAB0041DC99 /* ActEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FCCD7C22C57EAB0041DC99 /* ActEditViewController.swift */; };
+		34FCCD7F22C57EAB0041DC99 /* ActEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34FCCD7D22C57EAB0041DC99 /* ActEditViewController.xib */; };
+		34FCCD8322C580740041DC99 /* ForoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FCCD8122C580740041DC99 /* ForoViewController.swift */; };
+		34FCCD8422C580740041DC99 /* ForoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34FCCD8222C580740041DC99 /* ForoViewController.xib */; };
+		34FCCD8722C581030041DC99 /* ForoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FCCD8522C581030041DC99 /* ForoListViewController.swift */; };
+		34FCCD8822C581030041DC99 /* ForoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34FCCD8622C581030041DC99 /* ForoListViewController.xib */; };
+		34FCCD8B22C588FE0041DC99 /* ViewForoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FCCD8922C588FE0041DC99 /* ViewForoViewController.swift */; };
+		34FCCD8C22C588FE0041DC99 /* ViewForoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34FCCD8A22C588FE0041DC99 /* ViewForoViewController.xib */; };
+		34FCCD8F22C58DB90041DC99 /* ViewForoUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FCCD8D22C58DB90041DC99 /* ViewForoUnitViewController.swift */; };
+		34FCCD9022C58DB90041DC99 /* ViewForoUnitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34FCCD8E22C58DB90041DC99 /* ViewForoUnitViewController.xib */; };
+		5B13CDC38BA7901A80A22BCD /* Pods_StudyAssistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DF80FD74A6623408490656C /* Pods_StudyAssistant.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +59,45 @@
 		34E8136D22C52D8200CE1378 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34E8137022C52D8200CE1378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34E8137222C52D8200CE1378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34FCCD4122C5394A0041DC99 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		34FCCD4222C5394A0041DC99 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		34FCCD4522C53AD20041DC99 /* RegistrarseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarseViewController.swift; sourceTree = "<group>"; };
+		34FCCD4622C53AD20041DC99 /* RegistrarseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrarseViewController.xib; sourceTree = "<group>"; };
+		34FCCD4922C544390041DC99 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		34FCCD4A22C544390041DC99 /* InfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
+		34FCCD4D22C548820041DC99 /* InfoEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoEditViewController.swift; sourceTree = "<group>"; };
+		34FCCD4E22C548820041DC99 /* InfoEditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoEditViewController.xib; sourceTree = "<group>"; };
+		34FCCD5422C56DC80041DC99 /* Estudiante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estudiante.swift; sourceTree = "<group>"; };
+		34FCCD5622C56DF50041DC99 /* Instituto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instituto.swift; sourceTree = "<group>"; };
+		34FCCD5822C56E370041DC99 /* Curso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curso.swift; sourceTree = "<group>"; };
+		34FCCD5A22C56E7F0041DC99 /* Actividad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actividad.swift; sourceTree = "<group>"; };
+		34FCCD5C22C56EFD0041DC99 /* Departamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Departamento.swift; sourceTree = "<group>"; };
+		34FCCD5E22C56F3D0041DC99 /* Provincia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provincia.swift; sourceTree = "<group>"; };
+		34FCCD6022C56F6D0041DC99 /* Distrito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distrito.swift; sourceTree = "<group>"; };
+		34FCCD6322C570BE0041DC99 /* InstitutoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstitutoViewController.swift; sourceTree = "<group>"; };
+		34FCCD6422C570BE0041DC99 /* InstitutoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstitutoViewController.xib; sourceTree = "<group>"; };
+		34FCCD6822C572330041DC99 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		34FCCD6922C572330041DC99 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
+		34FCCD6D22C5735A0041DC99 /* CursoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursoViewController.swift; sourceTree = "<group>"; };
+		34FCCD6E22C5735A0041DC99 /* CursoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CursoViewController.xib; sourceTree = "<group>"; };
+		34FCCD7222C578A40041DC99 /* ActividadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActividadViewController.swift; sourceTree = "<group>"; };
+		34FCCD7322C578A40041DC99 /* ActividadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActividadViewController.xib; sourceTree = "<group>"; };
+		34FCCD7622C579CD0041DC99 /* ActUnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActUnitViewController.swift; sourceTree = "<group>"; };
+		34FCCD7722C579CD0041DC99 /* ActUnitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActUnitViewController.xib; sourceTree = "<group>"; };
+		34FCCD7A22C57A280041DC99 /* Foro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foro.swift; sourceTree = "<group>"; };
+		34FCCD7C22C57EAB0041DC99 /* ActEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActEditViewController.swift; sourceTree = "<group>"; };
+		34FCCD7D22C57EAB0041DC99 /* ActEditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActEditViewController.xib; sourceTree = "<group>"; };
+		34FCCD8122C580740041DC99 /* ForoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForoViewController.swift; sourceTree = "<group>"; };
+		34FCCD8222C580740041DC99 /* ForoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForoViewController.xib; sourceTree = "<group>"; };
+		34FCCD8522C581030041DC99 /* ForoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForoListViewController.swift; sourceTree = "<group>"; };
+		34FCCD8622C581030041DC99 /* ForoListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForoListViewController.xib; sourceTree = "<group>"; };
+		34FCCD8922C588FE0041DC99 /* ViewForoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewForoViewController.swift; sourceTree = "<group>"; };
+		34FCCD8A22C588FE0041DC99 /* ViewForoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewForoViewController.xib; sourceTree = "<group>"; };
+		34FCCD8D22C58DB90041DC99 /* ViewForoUnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewForoUnitViewController.swift; sourceTree = "<group>"; };
+		34FCCD8E22C58DB90041DC99 /* ViewForoUnitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewForoUnitViewController.xib; sourceTree = "<group>"; };
+		49CC966869820F2B7737FC14 /* Pods-StudyAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyAssistant.debug.xcconfig"; path = "Target Support Files/Pods-StudyAssistant/Pods-StudyAssistant.debug.xcconfig"; sourceTree = "<group>"; };
+		9DF80FD74A6623408490656C /* Pods_StudyAssistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyAssistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A75A3AE05247A6008CA94824 /* Pods-StudyAssistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyAssistant.release.xcconfig"; path = "Target Support Files/Pods-StudyAssistant/Pods-StudyAssistant.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B13CDC38BA7901A80A22BCD /* Pods_StudyAssistant.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +117,8 @@
 			children = (
 				34E8136522C52D8000CE1378 /* StudyAssistant */,
 				34E8136422C52D8000CE1378 /* Products */,
+				5695F8BE9A5638F6EB2D75F6 /* Pods */,
+				627551E0BF824513F54EB456 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +133,13 @@
 		34E8136522C52D8000CE1378 /* StudyAssistant */ = {
 			isa = PBXGroup;
 			children = (
+				34FCCD8022C5805C0041DC99 /* Foro */,
+				34FCCD7122C5787F0041DC99 /* Actividad */,
+				34FCCD6C22C5731D0041DC99 /* Curso */,
+				34FCCD6722C571BB0041DC99 /* Cell */,
+				34FCCD6222C570A30041DC99 /* Instituto */,
+				34FCCD5122C56CAE0041DC99 /* Model */,
+				34FCCD3C22C538810041DC99 /* Estudiante */,
 				34E8136622C52D8000CE1378 /* AppDelegate.swift */,
 				34E8136822C52D8000CE1378 /* ViewController.swift */,
 				34E8136A22C52D8000CE1378 /* Main.storyboard */,
@@ -64,6 +150,108 @@
 			path = StudyAssistant;
 			sourceTree = "<group>";
 		};
+		34FCCD3C22C538810041DC99 /* Estudiante */ = {
+			isa = PBXGroup;
+			children = (
+				34FCCD4122C5394A0041DC99 /* LoginViewController.swift */,
+				34FCCD4222C5394A0041DC99 /* LoginViewController.xib */,
+				34FCCD4522C53AD20041DC99 /* RegistrarseViewController.swift */,
+				34FCCD4622C53AD20041DC99 /* RegistrarseViewController.xib */,
+				34FCCD4922C544390041DC99 /* InfoViewController.swift */,
+				34FCCD4A22C544390041DC99 /* InfoViewController.xib */,
+				34FCCD4D22C548820041DC99 /* InfoEditViewController.swift */,
+				34FCCD4E22C548820041DC99 /* InfoEditViewController.xib */,
+			);
+			path = Estudiante;
+			sourceTree = "<group>";
+		};
+		34FCCD5122C56CAE0041DC99 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				34FCCD5422C56DC80041DC99 /* Estudiante.swift */,
+				34FCCD5622C56DF50041DC99 /* Instituto.swift */,
+				34FCCD5822C56E370041DC99 /* Curso.swift */,
+				34FCCD5A22C56E7F0041DC99 /* Actividad.swift */,
+				34FCCD5C22C56EFD0041DC99 /* Departamento.swift */,
+				34FCCD5E22C56F3D0041DC99 /* Provincia.swift */,
+				34FCCD6022C56F6D0041DC99 /* Distrito.swift */,
+				34FCCD7A22C57A280041DC99 /* Foro.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		34FCCD6222C570A30041DC99 /* Instituto */ = {
+			isa = PBXGroup;
+			children = (
+				34FCCD6322C570BE0041DC99 /* InstitutoViewController.swift */,
+				34FCCD6422C570BE0041DC99 /* InstitutoViewController.xib */,
+			);
+			path = Instituto;
+			sourceTree = "<group>";
+		};
+		34FCCD6722C571BB0041DC99 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				34FCCD6822C572330041DC99 /* ItemTableViewCell.swift */,
+				34FCCD6922C572330041DC99 /* ItemTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		34FCCD6C22C5731D0041DC99 /* Curso */ = {
+			isa = PBXGroup;
+			children = (
+				34FCCD6D22C5735A0041DC99 /* CursoViewController.swift */,
+				34FCCD6E22C5735A0041DC99 /* CursoViewController.xib */,
+			);
+			path = Curso;
+			sourceTree = "<group>";
+		};
+		34FCCD7122C5787F0041DC99 /* Actividad */ = {
+			isa = PBXGroup;
+			children = (
+				34FCCD7222C578A40041DC99 /* ActividadViewController.swift */,
+				34FCCD7322C578A40041DC99 /* ActividadViewController.xib */,
+				34FCCD7622C579CD0041DC99 /* ActUnitViewController.swift */,
+				34FCCD7722C579CD0041DC99 /* ActUnitViewController.xib */,
+				34FCCD7C22C57EAB0041DC99 /* ActEditViewController.swift */,
+				34FCCD7D22C57EAB0041DC99 /* ActEditViewController.xib */,
+			);
+			path = Actividad;
+			sourceTree = "<group>";
+		};
+		34FCCD8022C5805C0041DC99 /* Foro */ = {
+			isa = PBXGroup;
+			children = (
+				34FCCD8122C580740041DC99 /* ForoViewController.swift */,
+				34FCCD8222C580740041DC99 /* ForoViewController.xib */,
+				34FCCD8522C581030041DC99 /* ForoListViewController.swift */,
+				34FCCD8622C581030041DC99 /* ForoListViewController.xib */,
+				34FCCD8922C588FE0041DC99 /* ViewForoViewController.swift */,
+				34FCCD8A22C588FE0041DC99 /* ViewForoViewController.xib */,
+				34FCCD8D22C58DB90041DC99 /* ViewForoUnitViewController.swift */,
+				34FCCD8E22C58DB90041DC99 /* ViewForoUnitViewController.xib */,
+			);
+			path = Foro;
+			sourceTree = "<group>";
+		};
+		5695F8BE9A5638F6EB2D75F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				49CC966869820F2B7737FC14 /* Pods-StudyAssistant.debug.xcconfig */,
+				A75A3AE05247A6008CA94824 /* Pods-StudyAssistant.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		627551E0BF824513F54EB456 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DF80FD74A6623408490656C /* Pods_StudyAssistant.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +259,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34E8137522C52D8200CE1378 /* Build configuration list for PBXNativeTarget "StudyAssistant" */;
 			buildPhases = (
+				27E43E5B7A77F82B06341D76 /* [CP] Check Pods Manifest.lock */,
 				34E8135F22C52D8000CE1378 /* Sources */,
 				34E8136022C52D8000CE1378 /* Frameworks */,
 				34E8136122C52D8000CE1378 /* Resources */,
+				396A1D469D846C89397789A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,21 +312,99 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34FCCD4422C5394A0041DC99 /* LoginViewController.xib in Resources */,
+				34FCCD7922C579CD0041DC99 /* ActUnitViewController.xib in Resources */,
 				34E8137122C52D8200CE1378 /* LaunchScreen.storyboard in Resources */,
+				34FCCD8822C581030041DC99 /* ForoListViewController.xib in Resources */,
 				34E8136E22C52D8200CE1378 /* Assets.xcassets in Resources */,
+				34FCCD7022C5735A0041DC99 /* CursoViewController.xib in Resources */,
 				34E8136C22C52D8000CE1378 /* Main.storyboard in Resources */,
+				34FCCD8422C580740041DC99 /* ForoViewController.xib in Resources */,
+				34FCCD6B22C572330041DC99 /* ItemTableViewCell.xib in Resources */,
+				34FCCD4C22C544390041DC99 /* InfoViewController.xib in Resources */,
+				34FCCD9022C58DB90041DC99 /* ViewForoUnitViewController.xib in Resources */,
+				34FCCD7522C578A40041DC99 /* ActividadViewController.xib in Resources */,
+				34FCCD8C22C588FE0041DC99 /* ViewForoViewController.xib in Resources */,
+				34FCCD5022C548820041DC99 /* InfoEditViewController.xib in Resources */,
+				34FCCD6622C570BE0041DC99 /* InstitutoViewController.xib in Resources */,
+				34FCCD4822C53AD20041DC99 /* RegistrarseViewController.xib in Resources */,
+				34FCCD7F22C57EAB0041DC99 /* ActEditViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27E43E5B7A77F82B06341D76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StudyAssistant-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		396A1D469D846C89397789A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StudyAssistant/Pods-StudyAssistant-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StudyAssistant/Pods-StudyAssistant-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StudyAssistant/Pods-StudyAssistant-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		34E8135F22C52D8000CE1378 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34FCCD4722C53AD20041DC99 /* RegistrarseViewController.swift in Sources */,
+				34FCCD8322C580740041DC99 /* ForoViewController.swift in Sources */,
+				34FCCD5922C56E370041DC99 /* Curso.swift in Sources */,
+				34FCCD4322C5394A0041DC99 /* LoginViewController.swift in Sources */,
+				34FCCD7E22C57EAB0041DC99 /* ActEditViewController.swift in Sources */,
+				34FCCD4F22C548820041DC99 /* InfoEditViewController.swift in Sources */,
+				34FCCD8F22C58DB90041DC99 /* ViewForoUnitViewController.swift in Sources */,
+				34FCCD7B22C57A280041DC99 /* Foro.swift in Sources */,
 				34E8136922C52D8000CE1378 /* ViewController.swift in Sources */,
+				34FCCD6122C56F6D0041DC99 /* Distrito.swift in Sources */,
+				34FCCD5F22C56F3D0041DC99 /* Provincia.swift in Sources */,
+				34FCCD6A22C572330041DC99 /* ItemTableViewCell.swift in Sources */,
+				34FCCD5B22C56E7F0041DC99 /* Actividad.swift in Sources */,
+				34FCCD6522C570BE0041DC99 /* InstitutoViewController.swift in Sources */,
 				34E8136722C52D8000CE1378 /* AppDelegate.swift in Sources */,
+				34FCCD5722C56DF50041DC99 /* Instituto.swift in Sources */,
+				34FCCD5D22C56EFD0041DC99 /* Departamento.swift in Sources */,
+				34FCCD7422C578A40041DC99 /* ActividadViewController.swift in Sources */,
+				34FCCD8B22C588FE0041DC99 /* ViewForoViewController.swift in Sources */,
+				34FCCD4B22C544390041DC99 /* InfoViewController.swift in Sources */,
+				34FCCD8722C581030041DC99 /* ForoListViewController.swift in Sources */,
+				34FCCD5522C56DC80041DC99 /* Estudiante.swift in Sources */,
+				34FCCD6F22C5735A0041DC99 /* CursoViewController.swift in Sources */,
+				34FCCD7822C579CD0041DC99 /* ActUnitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,9 +548,11 @@
 		};
 		34E8137622C52D8200CE1378 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49CC966869820F2B7737FC14 /* Pods-StudyAssistant.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = StudyAssistant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -297,9 +567,11 @@
 		};
 		34E8137722C52D8200CE1378 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A75A3AE05247A6008CA94824 /* Pods-StudyAssistant.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = StudyAssistant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
