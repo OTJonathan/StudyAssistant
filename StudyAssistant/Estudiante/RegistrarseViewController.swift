@@ -21,29 +21,6 @@ class RegistrarseViewController: UIViewController {
     }
 
     @IBAction func Registrar(_ sender: Any) {
-        registrar_user()
-        print("#####")
-        print("#####")
-        print("#####")
-        print("#####")
-        if UserDefaults.exists(key: "respuesta") {
-            let alert_t = UIAlertController(title: "Completado", message: "Usuario Creado", preferredStyle: .alert)
-            let done_a = UIAlertAction(title: "OK", style: .default) { (action: UIAlertAction) in
-                let passview: LoginViewController = LoginViewController()
-                self.present(passview, animated: false, completion: nil)
-            }
-            alert_t.addAction(done_a)
-            present(alert_t, animated: true, completion: nil)
-        } else {
-            UserDefaults.standard.removeObject(forKey: "respuesta")
-            let alert_f = UIAlertController(title: "Error", message: "Usuario No Creado", preferredStyle: .alert)
-            let cancel_a = UIAlertAction(title: "OK", style: .default, handler: {(action: UIAlertAction) -> Void in})
-            alert_f.addAction(cancel_a)
-            present(alert_f, animated: true, completion: nil)
-        }
-    }
-    
-    func registrar_user() {
         UserDefaults.standard.removeObject(forKey: "respuesta")
         if self.txtNombre.text!.count==0 || self.txtApellido.text!.count==0 || self.txtUsuario.text!.count==0 || self.txtClave.text!.count==0 {
             let alert_r = UIAlertController(title: "Error", message: "Inserte todos los Campos", preferredStyle: .alert)
@@ -64,7 +41,22 @@ class RegistrarseViewController: UIViewController {
                     switch response.result {
                     case .success(let value):
                         print(value)
-                        UserDefaults.standard.set(value, forKey: "respuesta")
+                        let b = "\(value)"
+                        if b == "1" {
+                            let alert_t = UIAlertController(title: "Completado", message: "Usuario Creado", preferredStyle: .alert)
+                            let done_a = UIAlertAction(title: "OK", style: .default) { (action: UIAlertAction) in
+                                let passview: LoginViewController = LoginViewController()
+                                self.present(passview, animated: false, completion: nil)
+                            }
+                            alert_t.addAction(done_a)
+                            self.present(alert_t, animated: true, completion: nil)
+                        } else {
+                            UserDefaults.standard.removeObject(forKey: "respuesta")
+                            let alert_f = UIAlertController(title: "Error", message: "Usuario ya Existente", preferredStyle: .alert)
+                            let cancel_a = UIAlertAction(title: "OK", style: .default, handler: {(action: UIAlertAction) -> Void in})
+                            alert_f.addAction(cancel_a)
+                            self.present(alert_f, animated: true, completion: nil)
+                        }
                     case .failure(let error):
                         print(error.localizedDescription)
                     }
@@ -72,5 +64,4 @@ class RegistrarseViewController: UIViewController {
             }
         }
     }
-
 }
