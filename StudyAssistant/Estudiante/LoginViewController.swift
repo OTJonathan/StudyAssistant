@@ -47,8 +47,8 @@ class LoginViewController: UIViewController {
             self.present(passview, animated: false, completion: nil)
         } else {
             let alert = UIAlertController(title: "Error", message: "No se Encontro Usuario", preferredStyle: .alert)
-            let alert_option = UIAlertAction(title: "OK", style: .default, handler: {(action: UIAlertAction) -> Void in})
-            alert.addAction(alert_option)
+            let cancel_a = UIAlertAction(title: "OK", style: .default, handler: {(action: UIAlertAction) -> Void in})
+            alert.addAction(cancel_a)
             present(alert, animated: true, completion: nil)
         }
     }
