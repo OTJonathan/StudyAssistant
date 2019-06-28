@@ -12,17 +12,55 @@ import SwiftyJSON
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var txtUsuario: UITextField!
+    @IBOutlet weak var txtClave: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-    
-    @IBAction func ingresar(_ sender: Any) {
-        
-        let passview: InstitutoViewController = InstitutoViewController()
-        self.present(passview, animated: true, completion: nil)
+    func validarUsuario() {
+        let usuario = self.txtUsuario.text!
+        let clave = self.txtClave.text!
+        var json = JSON()
+        DispatchQueue.main.async {
+            let url = "http://192.168.56.1:8080/SAService/rest/estudiante/buscar_estudiante?usuario="+usuario+"&clave="+clave
+            Alamofire.request(url).responseJSON(completionHandler: { (response) in
+                switch response.result {
+                case .success(let value):
+                    json = JSON(value)
+                    UserDefaults.standard.set(json["id"].stringValue, forKey: "user_id")
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
+            })
+        }
     }
     
+    @IBAction func ingresar(_ sender: Any) {
+        validarUsuario()
+        if UserDefaults.exists(key: "user_id") {
+            print("ENtre")
+            let passview: InstitutoViewController = InstitutoViewController()
+            self.present(passview, animated: false, completion: nil)
+        } else {
+            let alert = UIAlertController(title: "Error", message: "No se Encontro Usuario", preferredStyle: .alert)
+            let alert_option = UIAlertAction(title: "OK", style: .default, handler: {(action: UIAlertAction) -> Void in})
+            alert.addAction(alert_option)
+            present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    @IBAction func registrar(_ sender: Any) {
+        let passview: RegistrarseViewController = RegistrarseViewController()
+        self.present(passview, animated: false, completion: nil)
+    }
+    
+}
+extension UserDefaults {
+    static func exists(key: String) -> Bool {
+        return UserDefaults.standard.object(forKey: key) != nil
+    }
 }

@@ -8,12 +8,12 @@
 
 import Foundation
 struct Estudiante {
-    var id: Int
+    var id: Int!
     var usuario: String
     var clave: String
     var nombre: String
     var apellido: String
-    var iddep: Int
-    var idprov: Int
-    var iddis: Int
+    var iddep: Int!
+    var idprov: Int!
+    var iddis: Int!
 }

@@ -12,6 +12,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegistrarseViewController" customModule="StudyAssistant" customModuleProvider="target">
             <connections>
+                <outlet property="txtApellido" destination="QvQ-Yn-RJa" id="yvq-qc-R5t"/>
+                <outlet property="txtClave" destination="2Oc-5N-ahW" id="gyH-zU-fSh"/>
+                <outlet property="txtNombre" destination="tyg-tp-Tpe" id="Lgu-Zo-sIx"/>
+                <outlet property="txtUsuario" destination="fci-yO-tEQ" id="Ga8-fY-g9w"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -46,6 +50,9 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <state key="normal" title="Registrar"/>
+                    <connections>
+                        <action selector="Registrar:" destination="-1" eventType="touchUpInside" id="Ryb-l5-I6L"/>
+                    </connections>
                 </button>
                 <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Clave" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Oc-5N-ahW">
                     <rect key="frame" x="89" y="370" width="236" height="30"/>

@@ -7,24 +7,24 @@
 //
 
 import UIKit
-
+import SwiftyJSON
 class RegistrarseViewController: UIViewController {
 
+    @IBOutlet weak var txtNombre: UITextField!
+    @IBOutlet weak var txtApellido: UITextField!
+    @IBOutlet weak var txtUsuario: UITextField!
+    @IBOutlet weak var txtClave: UITextField!
+    let userDefaults = UserDefaults()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
 
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func Registrar(_ sender: Any) {
+        let objEst = Estudiante(id: nil, usuario: self.txtUsuario.text!, clave: self.txtClave.text!, nombre: self.txtNombre.text!, apellido: self.txtApellido.text!, iddep: nil, idprov: nil, iddis: nil)
+        let url = ""
     }
-    */
 
 }
