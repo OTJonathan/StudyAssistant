@@ -49,6 +49,10 @@
 		34FCCD8F22C58DB90041DC99 /* ViewForoUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FCCD8D22C58DB90041DC99 /* ViewForoUnitViewController.swift */; };
 		34FCCD9022C58DB90041DC99 /* ViewForoUnitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34FCCD8E22C58DB90041DC99 /* ViewForoUnitViewController.xib */; };
 		5B13CDC38BA7901A80A22BCD /* Pods_StudyAssistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DF80FD74A6623408490656C /* Pods_StudyAssistant.framework */; };
+		CDEF5F8122C5B9A40041A555 /* WatsonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEF5F7F22C5B9A40041A555 /* WatsonViewController.swift */; };
+		CDEF5F8222C5B9A40041A555 /* WatsonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDEF5F8022C5B9A40041A555 /* WatsonViewController.xib */; };
+		CDEF5F8422C5C0110041A555 /* Credenciales.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEF5F8322C5C0110041A555 /* Credenciales.swift */; };
+		CDEF5F8622C5CB940041A555 /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEF5F8522C5CB940041A555 /* user.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +102,10 @@
 		49CC966869820F2B7737FC14 /* Pods-StudyAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyAssistant.debug.xcconfig"; path = "Target Support Files/Pods-StudyAssistant/Pods-StudyAssistant.debug.xcconfig"; sourceTree = "<group>"; };
 		9DF80FD74A6623408490656C /* Pods_StudyAssistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyAssistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A75A3AE05247A6008CA94824 /* Pods-StudyAssistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyAssistant.release.xcconfig"; path = "Target Support Files/Pods-StudyAssistant/Pods-StudyAssistant.release.xcconfig"; sourceTree = "<group>"; };
+		CDEF5F7F22C5B9A40041A555 /* WatsonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatsonViewController.swift; sourceTree = "<group>"; };
+		CDEF5F8022C5B9A40041A555 /* WatsonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WatsonViewController.xib; sourceTree = "<group>"; };
+		CDEF5F8322C5C0110041A555 /* Credenciales.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credenciales.swift; sourceTree = "<group>"; };
+		CDEF5F8522C5CB940041A555 /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +141,7 @@
 		34E8136522C52D8000CE1378 /* StudyAssistant */ = {
 			isa = PBXGroup;
 			children = (
+				CDEF5F7E22C5B9270041A555 /* Watson */,
 				34FCCD8022C5805C0041DC99 /* Foro */,
 				34FCCD7122C5787F0041DC99 /* Actividad */,
 				34FCCD6C22C5731D0041DC99 /* Curso */,
@@ -252,6 +261,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CDEF5F7E22C5B9270041A555 /* Watson */ = {
+			isa = PBXGroup;
+			children = (
+				CDEF5F7F22C5B9A40041A555 /* WatsonViewController.swift */,
+				CDEF5F8022C5B9A40041A555 /* WatsonViewController.xib */,
+				CDEF5F8322C5C0110041A555 /* Credenciales.swift */,
+				CDEF5F8522C5CB940041A555 /* user.swift */,
+			);
+			path = Watson;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -324,6 +344,7 @@
 				34FCCD4C22C544390041DC99 /* InfoViewController.xib in Resources */,
 				34FCCD9022C58DB90041DC99 /* ViewForoUnitViewController.xib in Resources */,
 				34FCCD7522C578A40041DC99 /* ActividadViewController.xib in Resources */,
+				CDEF5F8222C5B9A40041A555 /* WatsonViewController.xib in Resources */,
 				34FCCD8C22C588FE0041DC99 /* ViewForoViewController.xib in Resources */,
 				34FCCD5022C548820041DC99 /* InfoEditViewController.xib in Resources */,
 				34FCCD6622C570BE0041DC99 /* InstitutoViewController.xib in Resources */,
@@ -386,6 +407,7 @@
 				34FCCD5922C56E370041DC99 /* Curso.swift in Sources */,
 				34FCCD4322C5394A0041DC99 /* LoginViewController.swift in Sources */,
 				34FCCD7E22C57EAB0041DC99 /* ActEditViewController.swift in Sources */,
+				CDEF5F8622C5CB940041A555 /* user.swift in Sources */,
 				34FCCD4F22C548820041DC99 /* InfoEditViewController.swift in Sources */,
 				34FCCD8F22C58DB90041DC99 /* ViewForoUnitViewController.swift in Sources */,
 				34FCCD7B22C57A280041DC99 /* Foro.swift in Sources */,
@@ -395,12 +417,14 @@
 				34FCCD6A22C572330041DC99 /* ItemTableViewCell.swift in Sources */,
 				34FCCD5B22C56E7F0041DC99 /* Actividad.swift in Sources */,
 				34FCCD6522C570BE0041DC99 /* InstitutoViewController.swift in Sources */,
+				CDEF5F8122C5B9A40041A555 /* WatsonViewController.swift in Sources */,
 				34E8136722C52D8000CE1378 /* AppDelegate.swift in Sources */,
 				34FCCD5722C56DF50041DC99 /* Instituto.swift in Sources */,
 				34FCCD5D22C56EFD0041DC99 /* Departamento.swift in Sources */,
 				34FCCD7422C578A40041DC99 /* ActividadViewController.swift in Sources */,
 				34FCCD8B22C588FE0041DC99 /* ViewForoViewController.swift in Sources */,
 				34FCCD4B22C544390041DC99 /* InfoViewController.swift in Sources */,
+				CDEF5F8422C5C0110041A555 /* Credenciales.swift in Sources */,
 				34FCCD8722C581030041DC99 /* ForoListViewController.swift in Sources */,
 				34FCCD5522C56DC80041DC99 /* Estudiante.swift in Sources */,
 				34FCCD6F22C5735A0041DC99 /* CursoViewController.swift in Sources */,
@@ -551,6 +575,7 @@
 			baseConfigurationReference = 49CC966869820F2B7737FC14 /* Pods-StudyAssistant.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = StudyAssistant/Info.plist;
@@ -570,6 +595,7 @@
 			baseConfigurationReference = A75A3AE05247A6008CA94824 /* Pods-StudyAssistant.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = StudyAssistant/Info.plist;

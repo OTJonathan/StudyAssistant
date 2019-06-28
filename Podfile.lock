@@ -1,20 +1,95 @@
 PODS:
   - Alamofire (4.8.2)
+  - IBMWatsonAssistantV1 (2.1.0):
+    - IBMWatsonRestKit (~> 3.0.0)
+  - IBMWatsonAssistantV2 (2.1.0):
+    - IBMWatsonRestKit (~> 3.0.0)
+  - IBMWatsonCompareComplyV1 (2.1.0):
+    - IBMWatsonRestKit (~> 3.0.0)
+  - IBMWatsonDiscoveryV1 (2.1.0):
+    - IBMWatsonRestKit (~> 3.0.0)
+  - IBMWatsonLanguageTranslatorV3 (2.1.0):
+    - IBMWatsonRestKit (~> 3.0.0)
+  - IBMWatsonNaturalLanguageClassifierV1 (2.1.0):
+    - IBMWatsonRestKit (~> 3.0.0)
+  - IBMWatsonNaturalLanguageUnderstandingV1 (2.1.0):
+    - IBMWatsonRestKit (~> 3.0.0)
+  - IBMWatsonPersonalityInsightsV3 (2.1.0):
+    - IBMWatsonRestKit (~> 3.0.0)
+  - IBMWatsonRestKit (3.0.3)
+  - IBMWatsonSpeechToTextV1 (2.1.0):
+    - IBMWatsonRestKit (~> 3.0.0)
+    - Starscream (= 3.0.5)
+  - IBMWatsonTextToSpeechV1 (2.1.0):
+    - IBMWatsonRestKit (~> 3.0.0)
+  - IBMWatsonToneAnalyzerV3 (2.1.0):
+    - IBMWatsonRestKit (~> 3.0.0)
+  - IBMWatsonVisualRecognitionV3 (2.1.0):
+    - IBMWatsonRestKit (~> 3.0.0)
+  - JSQMessagesViewController (7.3.5):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
+  - Starscream (3.0.5)
   - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
   - Alamofire
+  - IBMWatsonAssistantV1 (~> 2.1.0)
+  - IBMWatsonAssistantV2 (~> 2.1.0)
+  - IBMWatsonCompareComplyV1 (~> 2.1.0)
+  - IBMWatsonDiscoveryV1 (~> 2.1.0)
+  - IBMWatsonLanguageTranslatorV3 (~> 2.1.0)
+  - IBMWatsonNaturalLanguageClassifierV1 (~> 2.1.0)
+  - IBMWatsonNaturalLanguageUnderstandingV1 (~> 2.1.0)
+  - IBMWatsonPersonalityInsightsV3 (~> 2.1.0)
+  - IBMWatsonSpeechToTextV1 (~> 2.1.0)
+  - IBMWatsonTextToSpeechV1 (~> 2.1.0)
+  - IBMWatsonToneAnalyzerV3 (~> 2.1.0)
+  - IBMWatsonVisualRecognitionV3 (~> 2.1.0)
+  - JSQMessagesViewController
   - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - IBMWatsonAssistantV1
+    - IBMWatsonAssistantV2
+    - IBMWatsonCompareComplyV1
+    - IBMWatsonDiscoveryV1
+    - IBMWatsonLanguageTranslatorV3
+    - IBMWatsonNaturalLanguageClassifierV1
+    - IBMWatsonNaturalLanguageUnderstandingV1
+    - IBMWatsonPersonalityInsightsV3
+    - IBMWatsonRestKit
+    - IBMWatsonSpeechToTextV1
+    - IBMWatsonTextToSpeechV1
+    - IBMWatsonToneAnalyzerV3
+    - IBMWatsonVisualRecognitionV3
+    - JSQMessagesViewController
+    - JSQSystemSoundPlayer
+    - Starscream
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  IBMWatsonAssistantV1: fb76f08665b9db1f05cbed3167a45917395ce91c
+  IBMWatsonAssistantV2: 179b62e8bb0696ecdcba756dbbcdd99d39a86a72
+  IBMWatsonCompareComplyV1: 4efa4126c9c1eddfb8b70b018baca28dd5a60ce0
+  IBMWatsonDiscoveryV1: e6510aba492311549b693832f356191f6d776a55
+  IBMWatsonLanguageTranslatorV3: e2661f153a37fe8171450cd7d055779379fd1566
+  IBMWatsonNaturalLanguageClassifierV1: bb413ab3fc0811129f1bb37119daec00492a0311
+  IBMWatsonNaturalLanguageUnderstandingV1: 8208cbfe0f7023746fa9d326b44df8b84b5d5183
+  IBMWatsonPersonalityInsightsV3: 0dd7d6966ac6b3dde20500f3900588480f5efce9
+  IBMWatsonRestKit: 47dcac7ccc12e0d15a948b79e481e0e0abacb057
+  IBMWatsonSpeechToTextV1: d8332794f1eddc683d85f017e21f79b12b6fa2fa
+  IBMWatsonTextToSpeechV1: f00763484984385317a1bd4bf9642753f83d64e6
+  IBMWatsonToneAnalyzerV3: c3d3a044f7df7fbf7eeac29e76eb655dfd89b602
+  IBMWatsonVisualRecognitionV3: efdbd31eaf771f686fb8cedf9f48213f88f8d594
+  JSQMessagesViewController: 6587f56aedbcb150a8ba1d968e1ef58b1bc758b7
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
+  Starscream: faf918b2f2eff7d5dd21180646bf015a669673bd
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 2a16dd06dd3677333ac560d2805ab4ed69247b3d
+PODFILE CHECKSUM: a3318bd7267716dc51f2937e2a7e3d37b5c37a30
 
 COCOAPODS: 1.7.1
