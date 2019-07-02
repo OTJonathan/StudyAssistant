@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3444A30322C9736700BA9CEA /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3444A30122C9736700BA9CEA /* ItemTableViewCell.swift */; };
+		3444A30422C9736700BA9CEA /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3444A30222C9736700BA9CEA /* ItemTableViewCell.xib */; };
 		34E8136722C52D8000CE1378 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E8136622C52D8000CE1378 /* AppDelegate.swift */; };
 		34E8136922C52D8000CE1378 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E8136822C52D8000CE1378 /* ViewController.swift */; };
 		34E8136C22C52D8000CE1378 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34E8136A22C52D8000CE1378 /* Main.storyboard */; };
@@ -29,8 +31,6 @@
 		34FCCD6122C56F6D0041DC99 /* Distrito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FCCD6022C56F6D0041DC99 /* Distrito.swift */; };
 		34FCCD6522C570BE0041DC99 /* InstitutoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FCCD6322C570BE0041DC99 /* InstitutoViewController.swift */; };
 		34FCCD6622C570BE0041DC99 /* InstitutoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34FCCD6422C570BE0041DC99 /* InstitutoViewController.xib */; };
-		34FCCD6A22C572330041DC99 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FCCD6822C572330041DC99 /* ItemTableViewCell.swift */; };
-		34FCCD6B22C572330041DC99 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34FCCD6922C572330041DC99 /* ItemTableViewCell.xib */; };
 		34FCCD6F22C5735A0041DC99 /* CursoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FCCD6D22C5735A0041DC99 /* CursoViewController.swift */; };
 		34FCCD7022C5735A0041DC99 /* CursoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34FCCD6E22C5735A0041DC99 /* CursoViewController.xib */; };
 		34FCCD7422C578A40041DC99 /* ActividadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FCCD7222C578A40041DC99 /* ActividadViewController.swift */; };
@@ -52,6 +52,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3444A30122C9736700BA9CEA /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		3444A30222C9736700BA9CEA /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
 		34E8136322C52D8000CE1378 /* StudyAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34E8136622C52D8000CE1378 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34E8136822C52D8000CE1378 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,8 +78,6 @@
 		34FCCD6022C56F6D0041DC99 /* Distrito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distrito.swift; sourceTree = "<group>"; };
 		34FCCD6322C570BE0041DC99 /* InstitutoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstitutoViewController.swift; sourceTree = "<group>"; };
 		34FCCD6422C570BE0041DC99 /* InstitutoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstitutoViewController.xib; sourceTree = "<group>"; };
-		34FCCD6822C572330041DC99 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
-		34FCCD6922C572330041DC99 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
 		34FCCD6D22C5735A0041DC99 /* CursoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursoViewController.swift; sourceTree = "<group>"; };
 		34FCCD6E22C5735A0041DC99 /* CursoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CursoViewController.xib; sourceTree = "<group>"; };
 		34FCCD7222C578A40041DC99 /* ActividadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActividadViewController.swift; sourceTree = "<group>"; };
@@ -135,8 +135,8 @@
 			children = (
 				34FCCD8022C5805C0041DC99 /* Foro */,
 				34FCCD7122C5787F0041DC99 /* Actividad */,
-				34FCCD6C22C5731D0041DC99 /* Curso */,
 				34FCCD6722C571BB0041DC99 /* Cell */,
+				34FCCD6C22C5731D0041DC99 /* Curso */,
 				34FCCD6222C570A30041DC99 /* Instituto */,
 				34FCCD5122C56CAE0041DC99 /* Model */,
 				34FCCD3C22C538810041DC99 /* Estudiante */,
@@ -192,8 +192,8 @@
 		34FCCD6722C571BB0041DC99 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				34FCCD6822C572330041DC99 /* ItemTableViewCell.swift */,
-				34FCCD6922C572330041DC99 /* ItemTableViewCell.xib */,
+				3444A30122C9736700BA9CEA /* ItemTableViewCell.swift */,
+				3444A30222C9736700BA9CEA /* ItemTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -316,11 +316,11 @@
 				34FCCD7922C579CD0041DC99 /* ActUnitViewController.xib in Resources */,
 				34E8137122C52D8200CE1378 /* LaunchScreen.storyboard in Resources */,
 				34FCCD8822C581030041DC99 /* ForoListViewController.xib in Resources */,
+				3444A30422C9736700BA9CEA /* ItemTableViewCell.xib in Resources */,
 				34E8136E22C52D8200CE1378 /* Assets.xcassets in Resources */,
 				34FCCD7022C5735A0041DC99 /* CursoViewController.xib in Resources */,
 				34E8136C22C52D8000CE1378 /* Main.storyboard in Resources */,
 				34FCCD8422C580740041DC99 /* ForoViewController.xib in Resources */,
-				34FCCD6B22C572330041DC99 /* ItemTableViewCell.xib in Resources */,
 				34FCCD4C22C544390041DC99 /* InfoViewController.xib in Resources */,
 				34FCCD9022C58DB90041DC99 /* ViewForoUnitViewController.xib in Resources */,
 				34FCCD7522C578A40041DC99 /* ActividadViewController.xib in Resources */,
@@ -385,6 +385,7 @@
 				34FCCD8322C580740041DC99 /* ForoViewController.swift in Sources */,
 				34FCCD5922C56E370041DC99 /* Curso.swift in Sources */,
 				34FCCD4322C5394A0041DC99 /* LoginViewController.swift in Sources */,
+				3444A30322C9736700BA9CEA /* ItemTableViewCell.swift in Sources */,
 				34FCCD7E22C57EAB0041DC99 /* ActEditViewController.swift in Sources */,
 				34FCCD4F22C548820041DC99 /* InfoEditViewController.swift in Sources */,
 				34FCCD8F22C58DB90041DC99 /* ViewForoUnitViewController.swift in Sources */,
@@ -392,7 +393,6 @@
 				34E8136922C52D8000CE1378 /* ViewController.swift in Sources */,
 				34FCCD6122C56F6D0041DC99 /* Distrito.swift in Sources */,
 				34FCCD5F22C56F3D0041DC99 /* Provincia.swift in Sources */,
-				34FCCD6A22C572330041DC99 /* ItemTableViewCell.swift in Sources */,
 				34FCCD5B22C56E7F0041DC99 /* Actividad.swift in Sources */,
 				34FCCD6522C570BE0041DC99 /* InstitutoViewController.swift in Sources */,
 				34E8136722C52D8000CE1378 /* AppDelegate.swift in Sources */,

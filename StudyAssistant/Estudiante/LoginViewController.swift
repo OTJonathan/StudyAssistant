@@ -21,7 +21,7 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    func validarUsuario() {
+    @IBAction func ingresar(_ sender: Any) {
         let usuario = self.txtUsuario.text!
         let clave = self.txtClave.text!
         var json = JSON()
@@ -31,25 +31,22 @@ class LoginViewController: UIViewController {
                 switch response.result {
                 case .success(let value):
                     json = JSON(value)
+                    print(value)
                     UserDefaults.standard.set(json["id"].stringValue, forKey: "user_id")
+                    if UserDefaults.exists(key: "user_id") {
+                        print("ENtre")
+                        let passview: InstitutoViewController = InstitutoViewController()
+                        self.present(passview, animated: false, completion: nil)
+                    } else {
+                        let alert = UIAlertController(title: "Error", message: "No se Encontro Usuario", preferredStyle: .alert)
+                        let cancel_a = UIAlertAction(title: "OK", style: .default, handler: {(action: UIAlertAction) -> Void in})
+                        alert.addAction(cancel_a)
+                        self.present(alert, animated: true, completion: nil)
+                    }
                 case .failure(let error):
                     print(error.localizedDescription)
                 }
             })
-        }
-    }
-    
-    @IBAction func ingresar(_ sender: Any) {
-        validarUsuario()
-        if UserDefaults.exists(key: "user_id") {
-            print("ENtre")
-            let passview: InstitutoViewController = InstitutoViewController()
-            self.present(passview, animated: false, completion: nil)
-        } else {
-            let alert = UIAlertController(title: "Error", message: "No se Encontro Usuario", preferredStyle: .alert)
-            let cancel_a = UIAlertAction(title: "OK", style: .default, handler: {(action: UIAlertAction) -> Void in})
-            alert.addAction(cancel_a)
-            present(alert, animated: true, completion: nil)
         }
     }
     
