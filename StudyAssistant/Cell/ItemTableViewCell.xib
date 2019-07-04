@@ -20,10 +20,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vAz-ma-GPf">
-                        <rect key="frame" x="16" y="16" width="288" height="11.5"/>
+                        <rect key="frame" x="16" y="16" width="254" height="11.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIt-KP-za4">
-                                <rect key="frame" x="0.0" y="0.0" width="288" height="11.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="254" height="11.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -35,7 +35,7 @@
                     <constraint firstAttribute="bottom" secondItem="vAz-ma-GPf" secondAttribute="bottom" constant="16" id="EWh-wP-9bs"/>
                     <constraint firstItem="vAz-ma-GPf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="EgH-Ko-Zsz"/>
                     <constraint firstItem="vAz-ma-GPf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Htj-R4-GKC"/>
-                    <constraint firstAttribute="trailing" secondItem="vAz-ma-GPf" secondAttribute="trailing" constant="16" id="sM2-WH-jvi"/>
+                    <constraint firstAttribute="trailing" secondItem="vAz-ma-GPf" secondAttribute="trailing" constant="50" id="sM2-WH-jvi"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InstitutoViewController" customModule="StudyAssistant" customModuleProvider="target">
             <connections>
-                <outlet property="institutoTable" destination="w8s-Qk-rmw" id="hgL-z9-P4m"/>
+                <outlet property="institutoTable" destination="5ij-pc-RaH" id="cPv-Eg-j7N"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,25 +21,28 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="w8s-Qk-rmw">
-                    <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aeb-2B-JPX">
+                    <rect key="frame" x="0.0" y="31" width="414" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <items>
+                        <navigationItem title="Instituto" id="LW3-JB-uSA">
+                            <barButtonItem key="rightBarButtonItem" systemItem="add" id="EIH-Ub-Q4W"/>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5ij-pc-RaH">
+                    <rect key="frame" x="0.0" y="75" width="414" height="787"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <connections>
-                        <outlet property="dataSource" destination="-1" id="qba-M2-tg2"/>
-                        <outlet property="delegate" destination="-1" id="BZt-bR-M0k"/>
+                        <outlet property="dataSource" destination="-1" id="bdH-nS-U2j"/>
+                        <outlet property="delegate" destination="-1" id="iQj-B8-Vf7"/>
                     </connections>
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="w8s-Qk-rmw" secondAttribute="bottom" id="LTe-mq-1fe"/>
-                <constraint firstItem="w8s-Qk-rmw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="m02-VX-G0M"/>
-                <constraint firstItem="w8s-Qk-rmw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="oGk-XM-MyC"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="w8s-Qk-rmw" secondAttribute="trailing" id="wKA-OQ-3XH"/>
-            </constraints>
-            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+            <point key="canvasLocation" x="130.43478260869566" y="152.67857142857142"/>
         </view>
     </objects>
 </document>

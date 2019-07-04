@@ -11,6 +11,7 @@ import Alamofire
 import SwiftyJSON
 class RegistrarseViewController: UIViewController {
 
+    @IBOutlet weak var returnLogin: UIBarButtonItem!
     @IBOutlet weak var txtNombre: UITextField!
     @IBOutlet weak var txtApellido: UITextField!
     @IBOutlet weak var txtUsuario: UITextField!
@@ -46,7 +47,7 @@ class RegistrarseViewController: UIViewController {
                             let alert_t = UIAlertController(title: "Completado", message: "Usuario Creado", preferredStyle: .alert)
                             let done_a = UIAlertAction(title: "OK", style: .default) { (action: UIAlertAction) in
                                 let passview: LoginViewController = LoginViewController()
-                                self.present(passview, animated: false, completion: nil)
+                                self.present(passview, animated: true, completion: nil)
                             }
                             alert_t.addAction(done_a)
                             self.present(alert_t, animated: true, completion: nil)
@@ -64,4 +65,11 @@ class RegistrarseViewController: UIViewController {
             }
         }
     }
+    
+    
+    @IBAction func volverLogin(_ sender: Any) {
+        let passview: LoginViewController = LoginViewController()
+        self.present(passview, animated: false, completion: nil)
+    }
+    
 }

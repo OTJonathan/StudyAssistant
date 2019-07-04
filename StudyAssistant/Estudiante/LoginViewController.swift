@@ -21,6 +21,11 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
     @IBAction func ingresar(_ sender: Any) {
         let usuario = self.txtUsuario.text!
         let clave = self.txtClave.text!
@@ -36,7 +41,7 @@ class LoginViewController: UIViewController {
                     if UserDefaults.exists(key: "user_id") {
                         print("ENtre")
                         let passview: InstitutoViewController = InstitutoViewController()
-                        self.present(passview, animated: false, completion: nil)
+                        self.present(passview, animated: true, completion: nil)
                     } else {
                         let alert = UIAlertController(title: "Error", message: "No se Encontro Usuario", preferredStyle: .alert)
                         let cancel_a = UIAlertAction(title: "OK", style: .default, handler: {(action: UIAlertAction) -> Void in})
@@ -53,6 +58,15 @@ class LoginViewController: UIViewController {
     @IBAction func registrar(_ sender: Any) {
         let passview: RegistrarseViewController = RegistrarseViewController()
         self.present(passview, animated: false, completion: nil)
+    }
+    
+    func textFieldShouldReturn(textfield: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
 }
