@@ -35,7 +35,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="asd" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="n1I-rs-Cxp">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" text="asd" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="n1I-rs-Cxp">
                     <rect key="frame" x="20" y="224" width="374" height="213"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>

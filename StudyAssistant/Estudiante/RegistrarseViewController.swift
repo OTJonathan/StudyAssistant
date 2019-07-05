@@ -22,7 +22,6 @@ class RegistrarseViewController: UIViewController {
     }
 
     @IBAction func Registrar(_ sender: Any) {
-        UserDefaults.standard.removeObject(forKey: "respuesta")
         if self.txtNombre.text!.count==0 || self.txtApellido.text!.count==0 || self.txtUsuario.text!.count==0 || self.txtClave.text!.count==0 {
             let alert_r = UIAlertController(title: "Error", message: "Inserte todos los Campos", preferredStyle: .alert)
             let cancel_r = UIAlertAction(title: "OK", style: .default, handler: {(action: UIAlertAction) -> Void in})
@@ -52,7 +51,6 @@ class RegistrarseViewController: UIViewController {
                             alert_t.addAction(done_a)
                             self.present(alert_t, animated: true, completion: nil)
                         } else {
-                            UserDefaults.standard.removeObject(forKey: "respuesta")
                             let alert_f = UIAlertController(title: "Error", message: "Usuario ya Existente", preferredStyle: .alert)
                             let cancel_a = UIAlertAction(title: "OK", style: .default, handler: {(action: UIAlertAction) -> Void in})
                             alert_f.addAction(cancel_a)

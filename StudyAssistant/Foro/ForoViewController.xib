@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ForoViewController" customModule="StudyAssistant" customModuleProvider="target">
             <connections>
+                <outlet property="foroTable" destination="ssw-jt-iNO" id="DNH-aM-ibl"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,26 +21,30 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="reH-9w-JEU">
+                <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="reH-9w-JEU">
                     <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <items>
                         <navigationItem title="Foro" id="10X-xM-Dcw">
-                            <barButtonItem key="rightBarButtonItem" title="Mis Foros" id="PWp-FV-6xO"/>
+                            <barButtonItem key="rightBarButtonItem" title="Mis Foros" id="PWp-FV-6xO">
+                                <connections>
+                                    <action selector="viewMisForos:" destination="-1" id="lHo-2K-y4c"/>
+                                </connections>
+                            </barButtonItem>
                         </navigationItem>
                     </items>
                 </navigationBar>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="52g-7t-3Nz">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ssw-jt-iNO">
                     <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="F8b-7R-XHq"/>
+                        <outlet property="delegate" destination="-1" id="FeV-JC-rGP"/>
+                    </connections>
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="52g-7t-3Nz" secondAttribute="bottom" id="OS0-Kg-iPk"/>
-                <constraint firstItem="52g-7t-3Nz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="R4v-R0-DZP"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="52g-7t-3Nz" secondAttribute="trailing" id="iWB-yP-vu1"/>
-                <constraint firstItem="52g-7t-3Nz" firstAttribute="top" secondItem="reH-9w-JEU" secondAttribute="bottom" id="sqr-kz-MlG"/>
-            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="37.681159420289859" y="34.821428571428569"/>
         </view>

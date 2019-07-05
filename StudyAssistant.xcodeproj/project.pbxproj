@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34354FB022CF52C100421DB5 /* ActAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34354FAE22CF52C100421DB5 /* ActAddViewController.swift */; };
+		34354FB122CF52C100421DB5 /* ActAddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34354FAF22CF52C100421DB5 /* ActAddViewController.xib */; };
 		3444A30322C9736700BA9CEA /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3444A30122C9736700BA9CEA /* ItemTableViewCell.swift */; };
 		3444A30422C9736700BA9CEA /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3444A30222C9736700BA9CEA /* ItemTableViewCell.xib */; };
 		34E8136722C52D8000CE1378 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E8136622C52D8000CE1378 /* AppDelegate.swift */; };
@@ -52,6 +54,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34354FAE22CF52C100421DB5 /* ActAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActAddViewController.swift; sourceTree = "<group>"; };
+		34354FAF22CF52C100421DB5 /* ActAddViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActAddViewController.xib; sourceTree = "<group>"; };
 		3444A30122C9736700BA9CEA /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		3444A30222C9736700BA9CEA /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
 		34E8136322C52D8000CE1378 /* StudyAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -216,6 +220,8 @@
 				34FCCD7722C579CD0041DC99 /* ActUnitViewController.xib */,
 				34FCCD7C22C57EAB0041DC99 /* ActEditViewController.swift */,
 				34FCCD7D22C57EAB0041DC99 /* ActEditViewController.xib */,
+				34354FAE22CF52C100421DB5 /* ActAddViewController.swift */,
+				34354FAF22CF52C100421DB5 /* ActAddViewController.xib */,
 			);
 			path = Actividad;
 			sourceTree = "<group>";
@@ -313,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34FCCD4422C5394A0041DC99 /* LoginViewController.xib in Resources */,
+				34354FB122CF52C100421DB5 /* ActAddViewController.xib in Resources */,
 				34FCCD7922C579CD0041DC99 /* ActUnitViewController.xib in Resources */,
 				34E8137122C52D8200CE1378 /* LaunchScreen.storyboard in Resources */,
 				34FCCD8822C581030041DC99 /* ForoListViewController.xib in Resources */,
@@ -405,6 +412,7 @@
 				34FCCD5522C56DC80041DC99 /* Estudiante.swift in Sources */,
 				34FCCD6F22C5735A0041DC99 /* CursoViewController.swift in Sources */,
 				34FCCD7822C579CD0041DC99 /* ActUnitViewController.swift in Sources */,
+				34354FB022CF52C100421DB5 /* ActAddViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

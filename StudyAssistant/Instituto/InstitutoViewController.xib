@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InstitutoViewController" customModule="StudyAssistant" customModuleProvider="target">
             <connections>
-                <outlet property="institutoTable" destination="5ij-pc-RaH" id="cPv-Eg-j7N"/>
+                <outlet property="institutoTable" destination="uSA-Qv-BYH" id="jUa-bW-KIc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -26,17 +26,21 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                     <items>
                         <navigationItem title="Instituto" id="LW3-JB-uSA">
-                            <barButtonItem key="rightBarButtonItem" systemItem="add" id="EIH-Ub-Q4W"/>
+                            <barButtonItem key="rightBarButtonItem" systemItem="add" id="EIH-Ub-Q4W">
+                                <connections>
+                                    <action selector="addInstituto:" destination="-1" id="5p5-WQ-YE2"/>
+                                </connections>
+                            </barButtonItem>
                         </navigationItem>
                     </items>
                 </navigationBar>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5ij-pc-RaH">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uSA-Qv-BYH">
                     <rect key="frame" x="0.0" y="75" width="414" height="787"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <connections>
-                        <outlet property="dataSource" destination="-1" id="bdH-nS-U2j"/>
-                        <outlet property="delegate" destination="-1" id="iQj-B8-Vf7"/>
+                        <outlet property="dataSource" destination="-1" id="gci-u1-SKX"/>
+                        <outlet property="delegate" destination="-1" id="lOY-uw-VH0"/>
                     </connections>
                 </tableView>
             </subviews>

@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActividadViewController" customModule="StudyAssistant" customModuleProvider="target">
             <connections>
+                <outlet property="actividadTable" destination="Vy1-34-XrS" id="VqG-Yw-HDD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,27 +21,35 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sl6-ak-H5r">
+                <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sl6-ak-H5r">
                     <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <items>
                         <navigationItem title="Actividades" id="cTL-6f-U8B">
-                            <barButtonItem key="leftBarButtonItem" title="Regresar" id="EW7-oQ-S83"/>
-                            <barButtonItem key="rightBarButtonItem" systemItem="add" id="IfX-ku-vfy"/>
+                            <barButtonItem key="leftBarButtonItem" title="Regresar" id="EW7-oQ-S83">
+                                <connections>
+                                    <action selector="returnCurso:" destination="-1" id="bNS-y3-obe"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem key="rightBarButtonItem" systemItem="add" id="IfX-ku-vfy">
+                                <connections>
+                                    <action selector="addActividad:" destination="-1" id="rli-YT-xEY"/>
+                                </connections>
+                            </barButtonItem>
                         </navigationItem>
                     </items>
                 </navigationBar>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nAm-lx-uPg">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vy1-34-XrS">
                     <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="NXv-y9-Fms"/>
+                        <outlet property="delegate" destination="-1" id="owu-w2-Ro7"/>
+                    </connections>
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <constraints>
-                <constraint firstItem="nAm-lx-uPg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Gq1-1i-gMb"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="nAm-lx-uPg" secondAttribute="bottom" id="OeI-dK-Bvk"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nAm-lx-uPg" secondAttribute="trailing" id="Omh-iB-o9D"/>
-                <constraint firstItem="nAm-lx-uPg" firstAttribute="top" secondItem="sl6-ak-H5r" secondAttribute="bottom" id="sF9-9l-Nva"/>
-            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="34.782608695652179" y="34.821428571428569"/>
         </view>

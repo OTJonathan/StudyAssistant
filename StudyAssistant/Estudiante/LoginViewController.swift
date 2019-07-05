@@ -36,10 +36,8 @@ class LoginViewController: UIViewController {
                 switch response.result {
                 case .success(let value):
                     json = JSON(value)
-                    print(value)
                     UserDefaults.standard.set(json["id"].stringValue, forKey: "user_id")
                     if UserDefaults.exists(key: "user_id") {
-                        print("ENtre")
                         let passview: InstitutoViewController = InstitutoViewController()
                         self.present(passview, animated: true, completion: nil)
                     } else {

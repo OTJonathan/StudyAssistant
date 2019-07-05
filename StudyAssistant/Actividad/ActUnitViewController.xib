@@ -30,7 +30,7 @@
                         </navigationItem>
                     </items>
                 </navigationBar>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="asd" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bAh-GH-mHa">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" text="asd" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bAh-GH-mHa">
                     <rect key="frame" x="20" y="222" width="374" height="128"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>

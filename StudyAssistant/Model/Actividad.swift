@@ -11,7 +11,7 @@ struct Actividad {
     var id: Int
     var nombre: String
     var descripcion: String
-    var fechafin: Date
+    var fechafin: String
     var idcur: Int
     var idest: Int
 }

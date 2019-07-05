@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CursoViewController" customModule="StudyAssistant" customModuleProvider="target">
             <connections>
+                <outlet property="cursoTable" destination="nEK-k1-q1Z" id="pcv-uy-4fQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,27 +21,35 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jlg-vR-oZH">
+                <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jlg-vR-oZH">
                     <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <items>
                         <navigationItem title="Cursos" id="vrE-0o-bg1">
-                            <barButtonItem key="leftBarButtonItem" title="Regresar" id="hmF-zC-JfB"/>
-                            <barButtonItem key="rightBarButtonItem" systemItem="add" id="VMi-hs-o1B"/>
+                            <barButtonItem key="leftBarButtonItem" title="Regresar" id="hmF-zC-JfB">
+                                <connections>
+                                    <action selector="returnInstituto:" destination="-1" id="Aob-Ys-nOy"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem key="rightBarButtonItem" systemItem="add" id="VMi-hs-o1B">
+                                <connections>
+                                    <action selector="addCurso:" destination="-1" id="bNd-jo-AFC"/>
+                                </connections>
+                            </barButtonItem>
                         </navigationItem>
                     </items>
                 </navigationBar>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="s3A-IO-ZWh">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nEK-k1-q1Z">
                     <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="HAV-BX-lOg"/>
+                        <outlet property="delegate" destination="-1" id="9gp-vc-gj1"/>
+                    </connections>
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="s3A-IO-ZWh" secondAttribute="bottom" id="AX2-nd-AeP"/>
-                <constraint firstItem="s3A-IO-ZWh" firstAttribute="top" secondItem="jlg-vR-oZH" secondAttribute="bottom" id="TBD-Ja-ahy"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="s3A-IO-ZWh" secondAttribute="trailing" id="rCs-n5-Eag"/>
-                <constraint firstItem="s3A-IO-ZWh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vsq-p9-gTK"/>
-            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="34.782608695652179" y="34.821428571428569"/>
         </view>
